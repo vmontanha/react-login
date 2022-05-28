@@ -1,127 +1,185 @@
 .login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-
-    background-color: #121214;
-    color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          width: 100%;
+          overflow-x: hidden;
+          background-color: #fff;
+          color: white;
+          overflow: hidden;
 }
 
 .login-logo img {
-    width: 300px;
-    height: 300px;
+          width: 100%;
 }
 
-.login-right { 
-    background-color: #29292E;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    padding: 20px;
-    width: 500px;
-    height: 500px;
+.login-logo {
+          width: 50%;
+          position: relative;
+          margin-right: auto;
+          margin-left: auto;
+          padding: 0;
+          margin: 0;
+}
+
+.login-right {
+          background-color: #3871C1;
+          border-radius: 300px 0 0 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          width: 50%;
+          height: 100%;
 }
 
 .login-right h1 {
-    font-family: 'Roboto Slab';
-    font-size: 40px;
-    margin-bottom: 20px;
+          font-family: 'Roboto Slab';
+          font-size: 40px;
+          margin-bottom: 20px;
 }
 
-.login-right h4 {
-    font-family: 'Roboto Slab';
-    font-weight: 300;
-    margin-top: 40px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #e1e1e6;
+input::placeholder {
+          color: #3871C1;
 }
 
 .login-loginInputEmail {
-    display: flex;
-    align-items: center;
-    color: gray;
-    background-color: #1A1A1D;
-    border-radius: 5px;
-    padding: 3px;
-    width: 98%;
-    height: 50px;
+          display: flex;
+          align-items: center;
+          color: #3871C1;
+          background-color: rgba(255, 255, 255, 0.503);
+          border-radius: 10px;
+          padding: 3px;
+          width: 50%;
+          height: 50px;
 }
 
 .login-loginInputEmail svg {
-    margin-left: 10px;
-    font-size: 25px;
+          margin-left: 10px;
+          font-size: 25px;
+          color: #3871C1;
 }
 
 .login-loginInputEmail input {
-    background: transparent;
-    width: 100%;
-    outline-width: 0;
-    color: #E1E1E6;
-    border: none;
-    font-size: 17px;
-    margin-left: 10px;
-    margin-right: 10px;
+          background: transparent;
+          width: 100%;
+          outline-width: 0;
+          color: #3871C1;
+          border: none;
+          font-size: 14px;
+          margin-left: 10px;
+          margin-right: 10px;
 }
 
 .login-loginInputPassword {
-    display: flex;
-    align-items: center;
-    color: gray;
-    background-color: #1A1A1D;
-    border-radius: 3px;
-    padding: 3px;
-    margin: 5px;
-    width: 98%;
-    height: 50px;
-    border-radius: 5px;
+          display: flex;
+          align-items: center;
+          color: #3871C1;
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 3px;
+          padding: 3px;
+          margin-top: 20px;
+          width: 50%;
+          height: 50px;
+          border-radius: 10px;
 }
 
 .login-loginInputPassword svg {
-    margin-left: 10px;
-    font-size: 25px;
+          margin-left: 10px;
+          font-size: 25px;
 }
 
 .login-loginInputPassword input {
-    background: transparent;
-    width: 100%;
-    outline-width: 0;
-    color:  #E1E1E6;
-    border: none;
-    font-size: 17px;
-    margin-left: 12px;
-    margin-right: 10px;
+          background: transparent;
+          width: 100%;
+          outline-width: 0;
+          color: #3871C1;
+          border: none;
+          font-size: 14px;
+          margin-left: 12px;
+          margin-right: 10px;
 }
 
 .login-right button {
-    width: 98%;
-    background-color: #202024;
-    color: #EFF2F5;
-    font-weight: 800;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 5px;
-    border: none;
+          width: 50%;
+          background-color: #80CC28;
+          color: #fff;
+          font-weight: 800;
+          height: 50px;
+          border-radius: 10px;
+          font-size: 16px;
+          margin-top: 20px;
+          border: none;
 
-    outline-width: 0;
+          outline-width: 0;
+          transition: 0.3s ease-out
 }
 
 .login-right button:hover {
-    background-color: #121214;
-    color: #EFF2F5;
-    cursor: pointer;
+          background-color: #3871C1;
+          color: #fff;
+          cursor: pointer;
+          box-shadow: 0px 5px 1px #80CC28;
 }
 
 .login-eye {
-    align-items: center;
-    justify-content: center;
-    font-size: 30;
-    cursor: pointer;
-    margin-right: 10px;
+          align-items: center;
+          justify-content: center;
+          font-size: 30;
+          cursor: pointer;
+          margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+          .login {
+                    display: flex;
+                    position: relative;
+                    width: 100%;
+                    height: 100vh;
+                    flex-direction: column;
+                    align-items: center;
+                    align-self: center;
+                    align-content: stretch;
+          }
+
+          .login .login-logo {
+                    position: relative;
+                    width: 100%;
+                    height: 50%;
+                    margin-bottom: auto;
+          }
+
+          .login-logo img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+          }
+
+          .login-right {
+                    width: 100%;
+                    margin: 0;
+                    height: 50%;
+                    border-radius: 150px 0 0 0;
+          }
+
+          .login-right h1 {
+                    font-size: 25px;
+          }
+
+          .login-loginInputEmail {
+                    width: 65%;
+                    padding: 0;
+          }
+
+          .login-loginInputPassword {
+                    width: 65%;
+                    padding: 0;
+          }
+
+          .login-right button {
+                    width: 65%;
+          }
+
 }
